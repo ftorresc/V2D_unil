@@ -1,18 +1,29 @@
-const svg = d3.select ('svg');
 
-const width = +svg.attr('width');
-const height = +svg.attr('height');
+let width = 1200, height = 1000
 
-const projection = d3.geoMercator();
-const pathGenerator = d3.geoPath().projection(projection);
+let svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
 
-d3.json('https://unpkg.com/world-atlas@1.1.4/world/110m.json')
-    .then(data => {
-        const countries = topojson.feature(data, data.objects.countries);
-        console.log(countries);
 
-        const paths = svg.selectAll('path')
-            .data(countries.features);
-        paths.enter().append('path')
-            .attr('d', d => pathGenerator(d));
-    });
+let europeProjection = d3.geoMercator()
+	.center([ 13, 52 ])
+  .scale([ width / 1.5 ])
+  .translate([ width / 2, height / 2 ])
+
+
+let pathGenerator = null
+
+
+pathGenerator = d3.geoPath().projection(europeProjection)
+geoJsonUrl = "https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json"
+
+d3.json(geoJsonUrl).then(geojson => {
+  svg.selectAll("path")
+    .data(geojson.features)
+    .enter()
+    .append("path")
+    .attr("d", pathGenerator)
+    .attr("stroke", "white") 
+    .attr("fill", "grey") 
+})
