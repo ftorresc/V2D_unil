@@ -7,8 +7,8 @@ let svg = d3.select("body").append("svg")
 
 
 let europeProjection = d3.geoMercator()
-	.center([ 13, 52 ])
-  .scale([ width / 1.5 ])
+	.center([ 13, 50 ])
+  .scale([ width])
   .translate([ width / 2, height / 2 ])
 
 
