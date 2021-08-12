@@ -27,3 +27,10 @@ d3.json(geoJsonUrl).then(geojson => {
     .attr("stroke", "white") 
     .attr("fill", "grey") 
 })
+
+var arcdata = [
+  {
+    sourceLocation: [-0.279672, 51.555973],
+    targetLocation: [12.454297, 41.933964]
+  }
+]
