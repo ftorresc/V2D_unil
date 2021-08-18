@@ -30,6 +30,13 @@ body {
     padding-bottom: 150%;
     perspective: 1000px;
 }
+.b-text {
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
 .b-game-card__cover {
     position: absolute;
     z-index: 1;
