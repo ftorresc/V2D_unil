@@ -8,7 +8,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #353540;
+    /* background: #353540; */
+    background: whitesmoke;
 }
 .l-container {
     display: grid;
@@ -32,10 +33,10 @@ body {
 }
 .b-text {
     text-align: center;
-    color: white;
+    color: black;
     padding-top: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    
 }
 .b-game-card__cover {
     position: absolute;
@@ -63,7 +64,7 @@ body {
     left: 0;
     width: 100%;
     height: 120%;
-    background: linear-gradient(226deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4) 35%, rgba(255, 255, 255, 0.2) 42%, rgba(255, 255, 255, 0) 60%);
+    
     transform: translateY(-20%);
     will-change: transform;
     transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
