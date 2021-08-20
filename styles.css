@@ -9,7 +9,7 @@ body {
     align-items: center;
     min-height: 100vh;
     /* background: #353540; */
-    background: whitesmoke;
+    background: rgb(230,230,230);
 }
 .l-container {
     display: grid;
@@ -33,9 +33,10 @@ body {
 }
 .b-text {
     text-align: center;
-    color: black;
+    color: rgb(50,50,50);
     padding-top: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
     
 }
 .b-game-card__cover {
