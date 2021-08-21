@@ -29,7 +29,9 @@ const bucharestLonLat = [26.0963, 44.4396];
 const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
 
-const geoInterpolator = d3.geoInterpolate(lausanneLonLat, londonLonLat);
+const geoInterpolator = d3.geoInterpolate(budapestLonLat, munichLonLat);
+const geoInterpolator2 = d3.geoInterpolate(munichLonLat, budapestLonLat);
+const geoInterpolator3 = d3.geoInterpolate(budapestLonLat, sevilleLonLat);
 let u = 0;
 
 function update() {
@@ -46,19 +48,29 @@ function update() {
   // Lausanne - Londres
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [lausanneLonLat, londonLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, londonLonLat]}});
   context.stroke();
   
   // londres - New York
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [lausanneLonLat, newYorkLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [londonLonLat, munichLonLat]}});
   context.stroke();
 
   // Point
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator2(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
   context.fill();
 
   // boucle d'évolution
@@ -72,3 +84,6 @@ d3.json('https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9
   geojson = structure_json;
   window.setInterval(update, 50);
 });
+
+
+//make a second update function with the second trip, then call it, then third etc etc
