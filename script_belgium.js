@@ -46,32 +46,52 @@ function update() {
   context.stroke();
 
 
-  // Lausanne - Londres
+  // St Petersburg - Copenhagen
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, londonLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [stpetersburgLonLat, copenhagenLonLat]}});
   context.stroke();
   
-  // londres - New York
+  // Copenhagen - St Petersburg
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [londonLonLat, munichLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [copenhagenLonLat, stpetersburgLonLat]}});
   context.stroke();
 
-  // Point
+  // St Petersburg - Seville
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [stpetersburgLonLat, sevilleLonLat]}});
+  context.stroke();
+
+  // Seville - Munich
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [sevilleLonLat, munichLonLat]}});
+  context.stroke();
+
+  // Point - Travel 1
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator(u)}});
   context.fill();
 
+  // Point - Travel 2
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator2(u)}});
   context.fill();
 
+  // Point - Travel 3
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
+  context.fill();
+
+  // Point - Travel 4
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator4(u)}});
   context.fill();
 
   // boucle d'évolution
