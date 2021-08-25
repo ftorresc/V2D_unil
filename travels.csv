@@ -17,3 +17,10 @@ England, London to Rome; Rome to London, 0, 2873
 Croatia, London to Glasgow; Glasgow to Copenhagen, 554, 1603
 Czech Republic, Glasgow to London; London to Budapest; Budapest to Baku, 554, 4580
 Scotland, Glasgow to London; London to Glasgow, 1108, 1108
+Sweden, Seville to St. Petersburg; St. Peterburg to Glasgow, 3579, 5645
+Spain, Seville to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to London, 0, 5713
+Slovakia, St. Petersburg to Seville, 3579, 3579
+Poland, St. Petersburg to Seville; Seville to St. Petersburg, 7158, 7158
+France, Munich to Budapest; Budapest to Bucharest, 561, 1205
+Germany, Munich to London, 0, 920
+Hungary, Budapest to Munich, 561, 561
