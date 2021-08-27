@@ -1,26 +1,26 @@
-country, travels, distancegroups, distancetotal
-Finland, Copenhagen to St. Petersburg, 1148, 1148
-Portugal, Budapest to Munich; Munich to Budapest; Budapest to Seville, 1123, 3448
-Italy, Rome to London; London to Munich; Munich to London, 0, 1840
-Wales, Baku to Rome; Rome to Amsterdam, 3110, 4408
-Switzerland, Baku to Rome; Rome to Baku; Baku to Bucharest; Bucharest to St. Petersburg, 6220, 9964
-Turkey, Rome to Baku, 3110, 3110
-Belgium, St. Petersburg to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to Seville; Seville to Munich, 2297, 7734
-Denmark, Copenhagen to Amsterdam; Amsterdam to Baku; Baku to London, 0, 8228
-Finland, Copenhagen to St. Petersburg, 1148, 1148
-Russia, St. Petersburg to Copenhagen, 1148, 1148
-Netherlands, Amsterdam to Budapest, 0, 1145
-Austria, Bucharest to Amsterdam; Amsterdam to Bucharest; Bucharest to London, 3576, 5670
-Ukraine, Amsterdam to Bucharest; Bucharest to Glasgow; Glasgow to Rome, 1788, 6235
-North Macedonia, Bucharest to Amsterdam, 1788, 1788
-England, London to Rome; Rome to London, 0, 2873
-Croatia, London to Glasgow; Glasgow to Copenhagen, 554, 1603
-Czech Republic, Glasgow to London; London to Budapest; Budapest to Baku, 554, 4580
-Scotland, Glasgow to London; London to Glasgow, 1108, 1108
-Sweden, Seville to St. Petersburg; St. Peterburg to Glasgow, 3579, 5645
-Spain, Seville to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to London, 0, 5713
-Slovakia, St. Petersburg to Seville, 3579, 3579
-Poland, St. Petersburg to Seville; Seville to St. Petersburg, 7158, 7158
-France, Munich to Budapest; Budapest to Bucharest, 561, 1205
-Germany, Munich to London, 0, 920
-Hungary, Budapest to Munich, 561, 561
+country,travels,distancegroups,distancetotal
+finland, Copenhagen to St. Petersburg, 1148, 1148
+portugal, Budapest to Munich; Munich to Budapest; Budapest to Seville, 1123, 3448
+italy, Rome to London; London to Munich; Munich to London, 0, 1840
+wales, Baku to Rome; Rome to Amsterdam, 3110, 4408
+switzerland, Baku to Rome; Rome to Baku; Baku to Bucharest; Bucharest to St. Petersburg, 6220, 9964
+turkey, Rome to Baku, 3110, 3110
+belgium, St. Petersburg to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to Seville; Seville to Munich, 2297, 7734
+denmark, Copenhagen to Amsterdam; Amsterdam to Baku; Baku to London, 0, 8228
+finland, Copenhagen to St. Petersburg, 1148, 1148
+russia, St. Petersburg to Copenhagen, 1148, 1148
+netherlands, Amsterdam to Budapest, 0, 1145
+austria, Bucharest to Amsterdam; Amsterdam to Bucharest; Bucharest to London, 3576, 5670
+ukraine, Amsterdam to Bucharest; Bucharest to Glasgow; Glasgow to Rome, 1788, 6235
+north macedonia, Bucharest to Amsterdam, 1788, 1788
+england, London to Rome; Rome to London, 0, 2873
+croatia, London to Glasgow; Glasgow to Copenhagen, 554, 1603
+czech Republic, Glasgow to London; London to Budapest; Budapest to Baku, 554, 4580
+scotland, Glasgow to London; London to Glasgow, 1108, 1108
+sweden, Seville to St. Petersburg; St. Peterburg to Glasgow, 3579, 5645
+spain, Seville to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to London, 0, 5713
+slovakia, St. Petersburg to Seville, 3579, 3579
+poland, St. Petersburg to Seville; Seville to St. Petersburg, 7158, 7158
+france, Munich to Budapest; Budapest to Bucharest, 561, 1205
+germany, Munich to London, 0, 920
+hungary, Budapest to Munich, 561, 561
