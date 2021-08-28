@@ -1,8 +1,13 @@
 body {
     display: flex;
     align-items: left;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .statcontainer {
     padding: 40px;
+}
+
+#title {
+    text-align: center;
 }

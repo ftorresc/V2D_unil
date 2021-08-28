@@ -5,9 +5,12 @@ const context = d3.select('canvas')
   .getContext('2d');
 
 const projection = d3.geoMercator()
-    .scale(1250)
+    .scale(500)
     .center([ 3, 50 ])
     .translate([ 1200 / 2, 1000 / 2 ])
+
+    
+    
 
 // le chemin
 const geoGenerator = d3.geoPath()
@@ -47,13 +50,13 @@ function update() {
   // Lausanne - Londres
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, londonLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [bakuLonLat, romeLonLat]}});
   context.stroke();
   
   // londres - New York
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [londonLonLat, munichLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, amsterdamLonLat]}});
   context.stroke();
 
   // Point
@@ -67,10 +70,7 @@ function update() {
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator2(u)}});
   context.fill();
 
-  context.beginPath();
-  context.fillStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
-  context.fill();
+
 
   // boucle d'évolution
   // du curseur
@@ -79,7 +79,7 @@ function update() {
 }
 
 // récupération des données
-d3.json('https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json').then( structure_json => {
+d3.json('https://gist.githubusercontent.com/d3indepth/f28e1c3a99ea6d84986f35ac8646fac7/raw/c58cede8dab4673c91a3db702d50f7447b373d98/ne_110m_land.json').then( structure_json => {
   geojson = structure_json;
   window.setInterval(update, 50);
 });

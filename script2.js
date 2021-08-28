@@ -5,8 +5,8 @@ const context = d3.select('canvas')
   .getContext('2d');
 
 const projection = d3.geoMercator()
-    .scale(1250)
-    .center([ 3, 50 ])
+    .scale(1000)
+    .center([ 23, 50 ])
     .translate([ 1200 / 2, 1000 / 2 ])
 
 // le chemin
@@ -29,7 +29,8 @@ const bucharestLonLat = [26.0963, 44.4396];
 const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
 
-const geoInterpolator = d3.geoInterpolate(lausanneLonLat, londonLonLat);
+const geoInterpolator = d3.geoInterpolate(bakuLonLat, romeLonLat);
+const geoInterpolator2 = d3.geoInterpolate(romeLonLat, amsterdamLonLat);
 let u = 0;
 
 function update() {
@@ -46,13 +47,13 @@ function update() {
   // Lausanne - Londres
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [lausanneLonLat, londonLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [bakuLonLat, romeLonLat]}});
   context.stroke();
   
   // londres - New York
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [lausanneLonLat, newYorkLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, amsterdamLonLat]}});
   context.stroke();
 
   // Point
@@ -68,7 +69,7 @@ function update() {
 }
 
 // récupération des données
-d3.json('https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json').then( structure_json => {
+d3.json('custom3.json').then( structure_json => {
   geojson = structure_json;
   window.setInterval(update, 50);
 });
