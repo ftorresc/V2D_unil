@@ -9,9 +9,6 @@ const projection = d3.geoMercator()
     .center([ 23, 50 ])
     .translate([ 1200 / 2, 1000 / 2 ])
 
-    
-    
-
 // le chemin
 const geoGenerator = d3.geoPath()
   .projection(projection)
@@ -33,7 +30,11 @@ const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
 
 const geoInterpolator = d3.geoInterpolate(bakuLonLat, romeLonLat);
-const geoInterpolator2 = d3.geoInterpolate(romeLonLat, amsterdamLonLat);
+const geoInterpolator2 = d3.geoInterpolate(romeLonLat, bakuLonLat);
+const geoInterpolator3 = d3.geoInterpolate(bakuLonLat, bucharestLonLat);
+const geoInterpolator4 = d3.geoInterpolate(bucharestLonLat, stpetersburgLonLat);
+
+
 let u = 0;
 
 function update() {
@@ -47,16 +48,24 @@ function update() {
   context.stroke();
 
 
-  // Lausanne - Londres
   context.beginPath();
   context.strokeStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [bakuLonLat, romeLonLat]}});
   context.stroke();
-  
-  // londres - New York
+
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, amsterdamLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, bakuLonLat]}});
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [bakuLonLat, bucharestLonLat]}});
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [bucharestLonLat, stpetersburgLonLat]}});
   context.stroke();
 
   // Point
@@ -70,6 +79,15 @@ function update() {
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator2(u)}});
   context.fill();
 
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator4(u)}});
+  context.fill();
 
 
   // boucle d'évolution
@@ -83,6 +101,3 @@ d3.json('custom3.json').then( structure_json => {
   geojson = structure_json;
   window.setInterval(update, 50);
 });
-
-
-//make a second update function with the second trip, then call it, then third etc etc
