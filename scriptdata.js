@@ -3,6 +3,13 @@ function capitalizeFirstLetter(string) {
   }
 
 let countryname = window.location.pathname.toString().replace("/", "").split(".")[0];
+if (countryname == "northmacedonia") {
+    countryname = "north macedonia"
+} else if (countryname == "czechrepublic") {
+    countryname = "czech republic"
+}
+
+console.log(countryname)
 
 d3.csv('travels.csv').then(data =>{
     console.log("Data",data)
