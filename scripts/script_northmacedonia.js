@@ -30,7 +30,7 @@ const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
 
 
-const geoInterpolator1 = d3.geoInterpolate(bucharestLonLat, glasgowLonLat);
+const geoInterpolator1 = d3.geoInterpolate(bucharestLonLat, amsterdamLonLat);
 
 let u = 0;
 

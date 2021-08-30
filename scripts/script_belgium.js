@@ -5,8 +5,8 @@ const context = d3.select('canvas')
   .getContext('2d');
 
 const projection = d3.geoMercator()
-    .scale(1250)
-    .center([ 3, 50 ])
+    .scale(1000)
+    .center([ 23, 50 ])
     .translate([ 1200 / 2, 1000 / 2 ])
 
 // le chemin
@@ -101,7 +101,7 @@ function update() {
 }
 
 // récupération des données
-d3.json('https://gist.githubusercontent.com/spiker830/3eab0cb407031bf9f2286f98b9d0558a/raw/7edae936285e77be675366550e20f9166bed0ed5/europe_features.json').then( structure_json => {
+d3.json('custom3.json').then( structure_json => {
   geojson = structure_json;
   window.setInterval(update, 50);
 });
