@@ -2,7 +2,9 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-let countryname = window.location.pathname.toString().replace("/", "").split(".")[0];
+let pagename = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
+
+let countryname = pagename.toString().replace("/", "").split(".")[0];
 if (countryname == "northmacedonia") {
     countryname = "north macedonia"
 } else if (countryname == "czechrepublic") {
@@ -11,7 +13,7 @@ if (countryname == "northmacedonia") {
 
 console.log(countryname)
 
-d3.csv('travels.csv').then(data =>{
+d3.csv('../travels.csv').then(data =>{
     console.log("Data",data)
     for (var i= 0; i < data.length; i++) {
         if (data[i].country.toString() == countryname) {

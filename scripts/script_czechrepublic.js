@@ -89,7 +89,7 @@ function update() {
 }
 
 // récupération des données
-d3.json('custom3.json').then( structure_json => {
+d3.json('../custom3.json').then( structure_json => {
   geojson = structure_json;
   window.setInterval(update, 50);
 });
