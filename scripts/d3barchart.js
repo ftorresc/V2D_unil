@@ -1,6 +1,6 @@
 var margin = {top: 10, right: 30, bottom: 20, left: 50},
-    width = 1380 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+    width = 800 - margin.left - margin.right,
+    height = 700 - margin.top - margin.bottom;
 
 var svg = d3.select("#chart")
     .append("svg")
@@ -25,7 +25,7 @@ d3.csv('travelTWO.csv').then(data =>{
     .attr("transform", "translate(0," + height + ")")
     .call(d3.axisBottom(x).tickSizeOuter(0));
 
-  // Add Y axis
+
   var y = d3.scaleLinear()
     .domain([0, 10000])
     .range([ height, 0 ]);
@@ -36,15 +36,14 @@ d3.csv('travelTWO.csv').then(data =>{
     .domain(subgroups)
     .range(['#ff8000','#984ea3','#4daf4a', '#377eb8','#e41a1d'])
 
-  //stack the data? --> stack per subgroup
+
   var stackedData = d3.stack()
     .keys(subgroups)
     (data)
 
-  // Show the bars
+
   svg.append("g")
     .selectAll("g")
-    // Enter in the stack data = loop key per key = group per group
     .data(stackedData)
     .enter().append("g")
       .attr("fill", function(d) { return color(d.key); })

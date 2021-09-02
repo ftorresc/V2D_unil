@@ -1,0 +1,57 @@
+body {font-family: 'Noto Sans KR';min-width: 660px;}
+#tournament { display: flex; min-width: 900px; }
+#tournament section.round {display: flex; flex-grow: 1; flex-direction: column; width:calc(100% / 4); }
+#tournament div.match {position: relative; display: flex; flex-direction: column; flex-grow: 1; padding: 15px 0; margin: 0 15px; justify-content: center; }
+#tournament section .team-info {position: relative; width: 100%; border: 2px solid #ccc; display: flex; padding: 15px 0; min-height: 20px; z-index: 10;}
+#tournament section .team-info.on {border-color: red;}
+#tournament section .team-name{display:flex;align-items: center;}
+#tournament section .team-flag {display: inline-flex; width: 55px; justify-content: center;}
+#tournament section .team-flag img {display: block; width: auto; margin: 0 auto;width: 45px;height: 20px;}
+#tournament section .team-name {display: inline-flex;font-size: 12px;}
+#tournament section .team-etc {display: flex; align-items: center; margin-left: 10px;font-size: 12px;}
+#tournament section.round:first-child div.match:before { display: none; }
+
+#tournament section.round div.match:before {
+  content: "";
+  display: block;
+  width: 13px;
+  border-bottom: 2px solid #ccc;
+  margin-left: -2px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  z-index: 1;
+}
+
+#tournament section.round div.match:nth-child(odd):after {
+  content: "";
+  display: block;
+  border: 2px solid transparent;
+  border-top-color: #ccc;
+  border-right-color: #ccc;
+  height: 50%;
+  position: absolute;
+  right: -20px;
+  width: 15px;
+  top: 50%;
+  z-index: 1;
+}
+
+#tournament section.round div.match:nth-child(even):after {
+  content: "";
+  display: block;
+  border: 2px solid transparent;
+  border-bottom-color: #ccc;
+  border-right-color: #ccc;
+  height: 50%;
+  position: absolute;
+  right: -20px;
+  width: 15px;
+  bottom: 50%;
+  z-index: 1;
+}
+#tournament section.round:last-child div.match:after { display: none; }
+#tournament div.match.on .team-info{ background-color: rgba(0, 0, 0, 0.13); }
+
+
+#tournament.hide { display: none; }
