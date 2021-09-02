@@ -1,13 +1,13 @@
 country,travels,distancegroups,distance16,distancequarter,distancesemi,distancefinals,distancetotal
-finland, Copenhagen to St. Petersburg, 1148, 0, 0, 0, 0, 1148
+finland, St. Petersburg -> Copenhagen -> St. Petersburg, 2297, 0, 0, 0, 0, 2297
 portugal, Budapest to Munich; Munich to Budapest; Budapest to Seville, 1123, 2325, 0, 0, 0, 3448
 italy, Rome to London; London to Munich; Munich to London, 0, 1436, 920, 920, 0, 3276
 wales, Baku to Rome; Rome to Amsterdam, 3110, 1298, 0, 0, 0,  4408
 switzerland, Baku to Rome; Rome to Baku; Baku to Bucharest; Bucharest to St. Petersburg, 6220, 1997, 1747, 0, 0, 9964
-turkey, Rome to Baku, 3110, 0, 0, 0, 0, 3110
+turkey, Baku -> Rome -> Baku, 6220, 0, 0, 0, 0, 6220
 belgium, St. Petersburg to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to Seville; Seville to Munich, 2297, 3579, 1858, 0, 0, 7734
 denmark, Copenhagen to Amsterdam; Amsterdam to Baku; Baku to London, 0, 620, 3631, 3976, 0, 8227
-russia, St. Petersburg to Copenhagen, 1148, 0, 0, 0, 0, 1148
+russia, Khimki -> St. Petersburg -> Khimki -> St. Petersburg -> Khimki -> Copenhagen, 4011, 0, 0, 0, 0, 4011
 netherlands, Amsterdam to Budapest, 0, 1145, 0, 0, 0, 1145
 austria, Bucharest to Amsterdam; Amsterdam to Bucharest; Bucharest to London, 3576, 2094, 0, 0, 0, 5670
 ukraine, Amsterdam to Bucharest; Bucharest to Glasgow; Glasgow to Rome, 1788, 2479, 1967, 0, 0, 6235
@@ -15,11 +15,11 @@ north macedonia, Bucharest to Amsterdam, 1788, 0, 0, 0, 0, 1788
 england, London to Rome; Rome to London, 0, 0, 1436, 1436, 0, 2872
 croatia, London to Glasgow; Glasgow to Copenhagen, 554, 1049, 0, 0, 0, 1603
 czech republic, Glasgow to London; London to Budapest; Budapest to Baku, 554, 1451, 2575, 0, 0,  4580
-scotland, Glasgow to London; London to Glasgow, 1108, 0, 0, 0, 0, 1108
+scotland, Hurworth -> Glasgow -> Hurworth -> London -> Hurworth -> Glasgow, 1375, 0, 0, 0, 0, 1375
 sweden, Seville to St. Petersburg; St. Peterburg to Glasgow, 3579, 2066, 0, 0, 0, 5645
 spain, Seville to Copenhagen; Copenhagen to St. Petersburg; St. Petersburg to London, 0, 2462, 1148, 2101, 0, 5711
-slovakia, St. Petersburg to Seville, 3579, 0, 0, 0, 0, 3579
-poland, St. Petersburg to Seville; Seville to St. Petersburg, 7158, 0, 0, 0, 0, 7158
+slovakia, St. Petersburg -> Seville, 3579, 0, 0, 0, 0, 3579
+poland, Sopot -> St. Petersburg -> Seville -> Sopot -> St. Petersburg, 8101, 0, 0, 0, 0, 8101
 france, Munich to Budapest; Budapest to Bucharest, 561, 632, 0, 0, 0, 1205
 germany, Munich to London, 0, 920, 0, 0, 0, 920
 hungary, Budapest to Munich, 561, 0, 0, 0, 0, 561
