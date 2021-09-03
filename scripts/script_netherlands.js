@@ -28,8 +28,11 @@ const budapestLonLat = [19.0402, 47.4979];
 const bucharestLonLat = [26.0963, 44.4396];
 const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
+const zeistLonLat = [5.2333, 52.0900];
 
-const geoInterpolator = d3.geoInterpolate(amsterdamLonLat, budapestLonLat);
+const geoInterpolator = d3.geoInterpolate(zeistLonLat, amsterdamLonLat);
+const geoInterpolator2 = d3.geoInterpolate(amsterdamLonLat, zeistLonLat);
+const geoInterpolator3 = d3.geoInterpolate(zeistLonLat, budapestLonLat);
 let u = 0;
 
 function update() {
@@ -43,16 +46,35 @@ function update() {
   context.stroke();
 
   
-  // Copenhagen - St Petersburg
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [amsterdamLonLat, budapestLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [zeistLonLat, amsterdamLonLat]}});
   context.stroke();
 
-  // Point - Travel 1
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [amsterdamLonLat, zeistLonLat]}});
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [zeistLonLat, budapestLonLat]}});
+  context.stroke();
+
+
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator2(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
   context.fill();
 
 

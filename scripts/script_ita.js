@@ -28,10 +28,14 @@ const budapestLonLat = [19.0402, 47.4979];
 const bucharestLonLat = [26.0963, 44.4396];
 const bakuLonLat = [49.8920, 40.3776];
 const stpetersburgLonLat = [30.3086, 59.9375];
+const florenceLonLat = [11.2362, 43.7792]
 
-const geoInterpolator = d3.geoInterpolate(romeLonLat, londonLonLat);
-const geoInterpolator2 = d3.geoInterpolate(londonLonLat, munichLonLat);
-const geoInterpolator3 = d3.geoInterpolate(munichLonLat, londonLonLat);
+const geoInterpolator1 = d3.geoInterpolate(florenceLonLat,romeLonLat);
+const geoInterpolator2 = d3.geoInterpolate(romeLonLat, florenceLonLat);
+const geoInterpolator3 = d3.geoInterpolate(florenceLonLat, londonLonLat);
+const geoInterpolator4 = d3.geoInterpolate(londonLonLat, florenceLonLat);
+const geoInterpolator5 = d3.geoInterpolate(munichLonLat, florenceLonLat);
+const geoInterpolator6 = d3.geoInterpolate(florenceLonLat, munichLonLat);
 let u = 0;
 
 function update() {
@@ -45,22 +49,33 @@ function update() {
   context.stroke();
 
 
-  // Lausanne - Londres
+
   context.beginPath();
   context.strokeStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, londonLonLat]}});
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [romeLonLat, florenceLonLat]}});
   context.stroke();
   
-  // londres - New York
+
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [londonLonLat, florenceLonLat]}});
+  context.stroke();
+
+  context.beginPath();
+  context.strokeStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [munichLonLat, florenceLonLat]}});
+  context.stroke();
+  
+
   context.beginPath();
   context.strokeStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'LineString', coordinates: [londonLonLat, munichLonLat]}});
   context.stroke();
 
-  // Point
+
   context.beginPath();
   context.fillStyle = 'red';
-  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator(u)}});
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator1(u)}});
   context.fill();
 
   context.beginPath();
@@ -71,6 +86,21 @@ function update() {
   context.beginPath();
   context.fillStyle = 'red';
   geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator3(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator4(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator5(u)}});
+  context.fill();
+
+  context.beginPath();
+  context.fillStyle = 'red';
+  geoGenerator({type: 'Feature', geometry: {type: 'Point', coordinates: geoInterpolator6(u)}});
   context.fill();
 
   // boucle d'évolution
