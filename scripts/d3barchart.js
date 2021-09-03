@@ -27,7 +27,7 @@ d3.csv('travelTWO.csv').then(data =>{
 
 
   var y = d3.scaleLinear()
-    .domain([0, 10000])
+    .domain([0, 18000])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y));
