@@ -19,7 +19,7 @@ d3.csv('../travels.csv').then(data =>{
         if (data[i].country.toString() == countryname) {
             console.log(capitalizeFirstLetter(data[i].country))
             document.getElementById("title").innerHTML = capitalizeFirstLetter(data[i].country) + "'s travel statistics during Euro 2020";
-            document.getElementById("stats").innerHTML = "Travels:" + "<br>" + data[i].travels + "<br><br>" + "Distance traveled during groups phase:" + data[i].distancegroups + " km" + "<br><br>" + "Total distance traveled during the tournament:" + data[i].distancetotal + " km";
+            document.getElementById("stats").innerHTML = "<b>Travels:</b>" + "<br>" + data[i].travels + "<br><br>" + "<b>Distance traveled during groups phase:</b>" + data[i].distancegroups + " km" + "<br><br>" + "<b>Total distance traveled during the tournament:</b>" + data[i].distancetotal + " km" +"<br><br>" + "<b>Average distance per match:</b>" + data[i].averagedistance + " km";
         }
         else {
             continue

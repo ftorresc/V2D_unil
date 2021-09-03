@@ -1,25 +1,25 @@
-country,travels,distancegroups,distance16,distancequarter,distancesemi,distancefinals,distancetotal
-finland, St. Petersburg -> Copenhagen -> St. Petersburg, 2297, 0, 0, 0, 0, 2297
-portugal, Budapest -> Munich -> Budapest -> Seville, 1123, 2325, 0, 0, 0, 3448
-italy, Florence -> Rome -> Florence -> Rome -> Florence -> Rome -> Florence -> London -> Florence -> Munich -> Florence -> London -> Florence -> London, 1403, 2418, 970, 2418, 1209, 8418
-wales, Baku -> Rome -> Baku -> Amsterdam, 6220, 3631, 0, 0, 0, 9851
-switzerland, Rome -> Baku -> Rome -> Baku -> Rome -> Bucharest -> Rome -> St. Petersburg, 12441, 2273, 2346, 0, 0, 17060
-turkey, Baku -> Rome -> Baku, 6220, 0, 0, 0, 0, 6220
-belgium, Tubize -> St. Petersburg -> Tubize -> Copenhagen -> Tubize -> St. Petersburg -> Tubize -> Seville -> Tubize -> Munich, 9277, 3369, 603, 0, 0, 13249
-denmark, Helsingør -> Copenhagen -> Helsingør -> Copenhagen -> Helsingør -> Copenhagen -> Helsingør -> Amsterdam -> Helsingør -> Baku -> Helsingør -> London, 240, 1292, 6414, 977, 0, 8923
-russia, Khimki -> St. Petersburg -> Khimki -> St. Petersburg -> Khimki -> Copenhagen, 4011, 0, 0, 0, 0, 4011
-netherlands, Zeist -> Amsterdam -> Zeist -> Amsterdam -> Zeist -> Amsterdam -> Zeist -> Budapest, 235, 1112, 0, 0, 0, 1347
-austria, Seefeld -> Bucharest -> Seefeld -> Amsterdam -> Seefeld -> Bucharest -> Seefeld -> London, 6166, 901, 0, 0, 0, 7067
-ukraine, Bucharest -> Amsterdam -> Bucharest -> Glasgow -> Bucharest -> Rome, 3576, 4958, 1136, 0, 0, 9670
-north macedonia, Bucharest to Amsterdam, 1788, 0, 0, 0, 0, 1788
-england, Burton -> London -> Burton -> London -> Burton -> London -> Burton -> London -> Burton -> Rome -> Burton -> London -> Burton -> London, 613, 204, 3057, 204, 102, 4180
-croatia, Rovinj -> London -> Rovinj -> Glasgow -> Rovinj -> Glasgow -> Rovinj -> Copenhagen, 9422, 1180, 0, 0, 0, 10602
-czech republic, Prague -> Glasgow -> Prague -> Glasgow -> Prague -> London -> Prague -> Budapest -> Prague -> Baku, 7667, 888, 2946, 0, 0, 11501
-scotland, Hurworth -> Glasgow -> Hurworth -> London -> Hurworth -> Glasgow, 1375, 0, 0, 0, 0, 1375
-sweden, Gothenburg -> Seville -> Gothenburg -> St.Peterburg -> Gothenburg -> St.Petersburg -> Gothenburg -> Glasgow, 9549, 1006, 0, 0, 0, 10555
-spain, Las Rozas -> Seville -> Las Rozas -> Seville -> Las Rozas -> Seville -> Las Rozas -> Copenhagen -> Las Rozas -> St.Petersburg -> Las Rozas -> London, 2343, 4144, 6383, 1256, 0, 14126
-slovakia, St. Petersburg -> Seville, 3579, 0, 0, 0, 0, 3579
-poland, Sopot -> St. Petersburg -> Seville -> Sopot -> St. Petersburg, 8101, 0, 0, 0, 0, 8101
-france, Clairefontaine -> Munich -> Clairefontaine -> Budapest -> Clairefontaine -> Budapest -> Clairefontaine -> Bucharest, 6535, 1899, 0, 0, 0, 8434
-germany, Herzogenaurach -> Munich -> Herzogenaurach -> Munich -> Herzogenaurach -> Munich -> Herzogenaurach -> London, 996, 809, 0, 0, 0, 1805
-hungary, Telki -> Budapest -> Telki -> Budapest -> Telki -> Munich, 614, 0, 0, 0, 0, 614
+country,travels,distancegroups,distance16,distancequarter,distancesemi,distancefinals,distancetotal,averagedistance
+finland, St. Petersburg -> Copenhagen -> St. Petersburg, 2297, 0, 0, 0, 0, 2297, 765
+portugal, Budapest -> Munich -> Budapest -> Seville, 1123, 2325, 0, 0, 0, 3448, 862
+italy, Florence -> Rome -> Florence -> Rome -> Florence -> Rome -> Florence -> London -> Florence -> Munich -> Florence -> London -> Florence -> London, 1403, 2418, 970, 2418, 1209, 8418, 1202
+wales, Baku -> Rome -> Baku -> Amsterdam, 6220, 3631, 0, 0, 0, 9851, 2462
+switzerland, Rome -> Baku -> Rome -> Baku -> Rome -> Bucharest -> Rome -> St. Petersburg, 12441, 2273, 2346, 0, 0, 17060, 3412
+turkey, Baku -> Rome -> Baku, 6220, 0, 0, 0, 0, 6220, 2073
+belgium, Tubize -> St. Petersburg -> Tubize -> Copenhagen -> Tubize -> St. Petersburg -> Tubize -> Seville -> Tubize -> Munich, 9277, 3369, 603, 0, 0, 13249, 2649
+denmark, Helsingør -> Copenhagen -> Helsingør -> Copenhagen -> Helsingør -> Copenhagen -> Helsingør -> Amsterdam -> Helsingør -> Baku -> Helsingør -> London, 240, 1292, 6414, 977, 0, 8923, 1487
+russia, Khimki -> St. Petersburg -> Khimki -> St. Petersburg -> Khimki -> Copenhagen, 4011, 0, 0, 0, 0, 4011, 1337
+netherlands, Zeist -> Amsterdam -> Zeist -> Amsterdam -> Zeist -> Amsterdam -> Zeist -> Budapest, 235, 1112, 0, 0, 0, 1347, 336
+austria, Seefeld -> Bucharest -> Seefeld -> Amsterdam -> Seefeld -> Bucharest -> Seefeld -> London, 6166, 901, 0, 0, 0, 7067, 1766
+ukraine, Bucharest -> Amsterdam -> Bucharest -> Glasgow -> Bucharest -> Rome, 3576, 4958, 1136, 0, 0, 9670, 1934
+north macedonia, Bucharest to Amsterdam, 1788, 0, 0, 0, 0, 1788, 596
+england, Burton -> London -> Burton -> London -> Burton -> London -> Burton -> London -> Burton -> Rome -> Burton -> London -> Burton -> London, 613, 204, 3057, 204, 102, 4180, 597
+croatia, Rovinj -> London -> Rovinj -> Glasgow -> Rovinj -> Glasgow -> Rovinj -> Copenhagen, 9422, 1180, 0, 0, 0, 10602, 2650
+czech republic, Prague -> Glasgow -> Prague -> Glasgow -> Prague -> London -> Prague -> Budapest -> Prague -> Baku, 7667, 888, 2946, 0, 0, 11501, 2300
+scotland, Hurworth -> Glasgow -> Hurworth -> London -> Hurworth -> Glasgow, 1375, 0, 0, 0, 0, 1375, 458
+sweden, Gothenburg -> Seville -> Gothenburg -> St.Peterburg -> Gothenburg -> St.Petersburg -> Gothenburg -> Glasgow, 9549, 1006, 0, 0, 0, 10555, 2638
+spain, Las Rozas -> Seville -> Las Rozas -> Seville -> Las Rozas -> Seville -> Las Rozas -> Copenhagen -> Las Rozas -> St.Petersburg -> Las Rozas -> London, 2343, 4144, 6383, 1256, 0, 14126, 2354
+slovakia, St. Petersburg -> Seville, 3579, 0, 0, 0, 0, 3579, 1193
+poland, Sopot -> St. Petersburg -> Seville -> Sopot -> St. Petersburg, 8101, 0, 0, 0, 0, 8101, 2700
+france, Clairefontaine -> Munich -> Clairefontaine -> Budapest -> Clairefontaine -> Budapest -> Clairefontaine -> Bucharest, 6535, 1899, 0, 0, 0, 8434, 2108
+germany, Herzogenaurach -> Munich -> Herzogenaurach -> Munich -> Herzogenaurach -> Munich -> Herzogenaurach -> London, 996, 809, 0, 0, 0, 1805, 451
+hungary, Telki -> Budapest -> Telki -> Budapest -> Telki -> Munich, 614, 0, 0, 0, 0, 614, 204
