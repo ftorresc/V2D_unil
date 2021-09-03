@@ -4,49 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <div class="l-container">
-        <div onclick="location.href='groupA.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <a href="index.html"></a>
-                <div class="b-game-card__cover"style="background-image: url(media/placeholder2.png);"></div>
-            </div>
-            <h3 class="b-text">Group A</h3>
-        </div>
-        <div onclick="location.href='groupB.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <div class="b-game-card__cover" style="background-image: url(media/placeholder_GB_saturated.png);"></div>
-            </div>
-            <h3 class="b-text">Group B</h3>
-        </div>
-        <div onclick="location.href='groupC.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <div class="b-game-card__cover" style="background-image: url(media/placeholder_GC_sat.png);"></div>
-            </div>
-            <h3 class="b-text">Group C</h3>
-        </div>
-        <div onclick="location.href='groupD.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <div class="b-game-card__cover" style="background-image: url(media/placeholder_GD_sat.png);"></div>
-            </div>
-            <h3 class="b-text">Group D</h3>
-        </div>
-        <div onclick="location.href='groupE.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <div class="b-game-card__cover" style="background-image: url(media/placeholder_GE_sat.png);"></div>
-            </div>
-            <h3 class="b-text">Group E</h3>
-        </div>
-        <div onclick="location.href='groupF.html';" style="cursor: pointer;">
-            <div class="b-game-card">
-                <div class="b-game-card__cover" style="background-image: url(media/placeholder_GF_sat.png);"></div>
-            </div>
-            <h3 class="b-text">Group F</h3>
-        </div>
-      </div>
+    <div id="text">
+        <h1>Euro 2020</h1>
+        <p>The 2020 UEFA European Football Championship was exceptionally held in 11 venues across Europe to mark the 60th anniversary of the tournament.</p> 
+        <p>While the tournament was received positively for its high scoring matches, criticism and attention has been drawn towards the unequal distribution of travelling distance across teams. 
+            While some teams have to travel upwards of 5000km for the group phase alone, others were allowed to play the entire phase at home.</p>
+            <a href="../groups.html" class="button rollover">
+                <span class="roll-text">Breakdown by country</span>
+                <span class="roll-text">Breakdown by country</span>
+              </a>
+              <a href="bracket.html" class="button rollover">
+                <span class="roll-text">Tournament bracket</span>
+                <span class="roll-text">Tournament bracket</span>
+              </a>
+    </div>
+    <div id="chart"></div>
+    <script src="../scripts/d3barchart.js"></script>
 </body>
 </html>

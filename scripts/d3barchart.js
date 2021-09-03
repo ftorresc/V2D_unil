@@ -10,7 +10,7 @@ var svg = d3.select("#chart")
       .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv('travelTWO.csv').then(data =>{
+d3.csv('travel_mini.csv').then(data =>{
     console.log(data.columns.slice(1))
 
     var subgroups = data.columns.slice(1)
