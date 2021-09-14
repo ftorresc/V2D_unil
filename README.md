@@ -8,7 +8,7 @@ This project attempts to provide an easily explored and easily understandable vi
 
 ## Data collection
 
-Data was collected manually and compiled into a csv format, based on [UEFA](https://www.uefa.com/uefaeuro-2020/fixtures-results/#/md/33673)'s website for the match locations, [base camp locations](https://www.uefa.com/uefaeuro-2020/news/0259-0e8ea1e12265-1c20a6816e6c-1000--euro-2020-team-bases/) as well as [Wikipedia](https://en.wikipedia.org/wiki/UEFA_Euro_2020) and the team's Twitter accounts for some of the group phase travel. The csv files can be easily modified through a simple text editor or through mechatroner's [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) extension for Visual Studio Code, enabling color highlighting and queries.
+Data was collected manually and compiled into a csv format, based on [UEFA](https://www.uefa.com/uefaeuro-2020/fixtures-results/#/md/33673)'s website for the match locations, [base camp locations](https://www.uefa.com/uefaeuro-2020/news/0259-0e8ea1e12265-1c20a6816e6c-1000--euro-2020-team-bases/) as well as [Wikipedia](https://en.wikipedia.org/wiki/UEFA_Euro_2020) and the team's Twitter accounts for some of the group phase travel. The distances presented in the barchart have been calculated thanks to this [tool](https://www.distance.to/). The csv files can be easily modified through a simple text editor or through mechatroner's [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) extension for Visual Studio Code, enabling color highlighting and queries.
 
 
 ## Installation and usage
