@@ -2,9 +2,14 @@
 
 ## Euro 2020 - A breakdown of distances traveled
 
-This project attempts to provide an easily explored and easily understandable visualisation of the data as it pertains to the distances traveled by each during their participation in the 2020 UEFA European Championships. Exceptionnaly, this edition of the tournament was held in 11 cities across Europe, instead of the usual format, where the tournament is held in a single country. It is an attempt at illustrating some of the criticism by the media after the reveal of the very unequal travel plans. Data was collected manually, based on [UEFA](https://www.uefa.com/uefaeuro-2020/)'s website as well as [Wikipedia](https://en.wikipedia.org/wiki/UEFA_Euro_2020).
+This project attempts to provide an easily explored and easily understandable visualisation of the data as it pertains to the distances traveled by each during their participation in the 2020 UEFA European Championships. Exceptionnaly, this edition of the tournament was held in 11 cities across Europe, instead of the usual format, where the tournament is held in a single country. It is an attempt at illustrating some of the criticism by the media after the reveal of the very unequal travel plans. 
 
 ![A preview of the project](media/preview.png)
+
+## Data collection
+
+Data was collected manually and compiled into a csv format, based on [UEFA](https://www.uefa.com/uefaeuro-2020/fixtures-results/#/md/33673)'s website for the match locations, [base camp locations](https://www.uefa.com/uefaeuro-2020/news/0259-0e8ea1e12265-1c20a6816e6c-1000--euro-2020-team-bases/) as well as [Wikipedia](https://en.wikipedia.org/wiki/UEFA_Euro_2020) and the team's Twitter accounts for some of the group phase travel. The csv files can be easily modified through a simple text editor or through mechatroner's [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv) extension for Visual Studio Code, enabling color highlighting and queries.
+
 
 ## Installation and usage
 
